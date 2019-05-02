@@ -8,11 +8,13 @@ export default function Stations({ stations }) {
 
   const streams = stations.streamUrls
 
+  console.log(streams)
+
   const streamUrl = { ...streams }
 
   const song = {
     name: stations.name,
-    url: streamUrl.streamUrl,
+    url: streamUrl,
     live: true,
   }
 
